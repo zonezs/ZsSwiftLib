@@ -11,9 +11,9 @@ Pod::Spec.new do |spec|
   spec.name         = "ZsSwiftLib"
   spec.version      = "1.0.1"
   spec.summary      = "Only my Swift Lib's."
-  spec.homepage     = "https://github.com/zonezs/ZsSwiftLib"
+  spec.homepage     = "https://github.com/zonezs/ZsSwiftLib/blob/master/README.md"
   spec.license      = "MIT"
   spec.author       = { "zonezs" => "zonezs123@gmail.com" }
   spec.source       = { :git => "https://github.com/zonezs/ZsSwiftLib.git", :tag => "#{spec.version}" }
-  spec.source_files = '*.{h,m,swift}'
+  spec.source_files = '*.swift'
 end

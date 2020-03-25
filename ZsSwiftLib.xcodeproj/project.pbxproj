@@ -13,7 +13,7 @@
 		C22DEB8F242AF7A200374CB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C22DEB8D242AF7A200374CB9 /* Main.storyboard */; };
 		C22DEB91242AF7A700374CB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C22DEB90242AF7A700374CB9 /* Assets.xcassets */; };
 		C22DEB94242AF7A700374CB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C22DEB92242AF7A700374CB9 /* LaunchScreen.storyboard */; };
-		C22DEB9C242B068700374CB9 /* ProjectConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DEB9B242B068700374CB9 /* ProjectConfig.swift */; };
+		C22DEBA0242B0B4E00374CB9 /* ProjectConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DEB9F242B0B4E00374CB9 /* ProjectConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,8 @@
 		C22DEB90242AF7A700374CB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C22DEB93242AF7A700374CB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C22DEB95242AF7A700374CB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C22DEB9B242B068700374CB9 /* ProjectConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectConfig.swift; sourceTree = "<group>"; };
+		C22DEB9D242B08C800374CB9 /* ZsSwiftLib.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZsSwiftLib.entitlements; sourceTree = "<group>"; };
+		C22DEB9F242B0B4E00374CB9 /* ProjectConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +59,25 @@
 		C22DEB86242AF7A200374CB9 /* ZsSwiftLib */ = {
 			isa = PBXGroup;
 			children = (
+				C22DEB9E242B0B4E00374CB9 /* Libs */,
+				C22DEB9D242B08C800374CB9 /* ZsSwiftLib.entitlements */,
 				C22DEB87242AF7A200374CB9 /* AppDelegate.swift */,
 				C22DEB89242AF7A200374CB9 /* SceneDelegate.swift */,
 				C22DEB8B242AF7A200374CB9 /* ViewController.swift */,
-				C22DEB9B242B068700374CB9 /* ProjectConfig.swift */,
 				C22DEB8D242AF7A200374CB9 /* Main.storyboard */,
 				C22DEB90242AF7A700374CB9 /* Assets.xcassets */,
 				C22DEB92242AF7A700374CB9 /* LaunchScreen.storyboard */,
 				C22DEB95242AF7A700374CB9 /* Info.plist */,
 			);
 			path = ZsSwiftLib;
+			sourceTree = "<group>";
+		};
+		C22DEB9E242B0B4E00374CB9 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				C22DEB9F242B0B4E00374CB9 /* ProjectConfig.swift */,
+			);
+			path = Libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,7 +154,7 @@
 				C22DEB8C242AF7A200374CB9 /* ViewController.swift in Sources */,
 				C22DEB88242AF7A200374CB9 /* AppDelegate.swift in Sources */,
 				C22DEB8A242AF7A200374CB9 /* SceneDelegate.swift in Sources */,
-				C22DEB9C242B068700374CB9 /* ProjectConfig.swift in Sources */,
+				C22DEBA0242B0B4E00374CB9 /* ProjectConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,16 +298,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ZsSwiftLib/ZsSwiftLib.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D46B23F9AD;
 				INFOPLIST_FILE = ZsSwiftLib/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zone.ZsSwiftLib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -307,16 +319,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ZsSwiftLib/ZsSwiftLib.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D46B23F9AD;
 				INFOPLIST_FILE = ZsSwiftLib/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zone.ZsSwiftLib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
