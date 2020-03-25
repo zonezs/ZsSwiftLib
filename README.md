@@ -2,15 +2,29 @@
 	<img src='Assets/ZsSwiftLib.gif'>
 </p>
 
-### Requirements ⚙️
+## Requirements ⚙️
+- macOS 10.15.
+- Xcode 11.0.
+- Swift 5.0.
 
-### Supported Platforms 📱
+## Supported Platforms 📱
+- iOS 13.0.
+- tvOS 13.0.
+- watchOS 6.0.
+- macOS 10.15.
 
-### Installation 💻
+## Installation 💻
 
-### Features ✨
+### CocoaPods
+[CocoaPods](https://cocoapods.org) is a centralized dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate SkeletonUI into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
-### Usage 🚀
+```ruby
+pod 'ZsSwiftLib'
+```
 
-### License 🎓
+## Features ✨
+
+## Usage 🚀
+
+## License 🎓
 ZsSwiftLib is released under the MIT license. See LICENSE for details.
