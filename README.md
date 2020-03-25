@@ -3,13 +3,13 @@
 </p>
 
 ## Requirements ⚙️
-- macOS 10.15.
+- macOS 10.14.
 - Xcode 11.0.
 - Swift 5.0.
 
 ## Supported Platforms 📱
-- iOS 13.0.
-- macOS 10.15.
+- iOS 10.0.
+- macOS 10.14.
 
 ## Installation 💻
 
