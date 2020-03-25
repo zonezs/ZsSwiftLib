@@ -14,34 +14,43 @@ class ProjectConfig: NSObject {
 
 import UIKit
 
+//public func kFont(_ size: CGFloat) -> UIFont {
+//    return UIFont.systemFont(ofSize: size, weight: UIFont.Weight.semibold)
+//}
+
+
 /// 系统字体大小
-public func kFont(_ size: CGFloat) -> UIFont {
-     return UIFont.systemFont(ofSize: size, weight: .semibold)
-}
+//public func kFont(_ size: CGFloat) -> UIFont {
+//     return UIFont.systemFont(ofSize: size, weight: .semibold)
+//}
+//
+//public func kFont() -> UIFont {
+//    return UIFont.systemFont(ofSize: 200, weight: .heavy)
+//}
 
-public func kFont() -> UIFont {
-    return UIFont.systemFont(ofSize: 200, weight: .heavy)
-}
-
-public func iOS13() -> Bool {
-    if #available(iOS 13.0, *) {
-        return true
-    } else {
-        return false
-    }
-}
+//public func iOS13() -> Bool {
+//    if #available(iOS 13.0, *) {
+//        return true
+//    } else {
+//        return false
+//    }
+//}
 
 // MARK: 判断是否在测试环境下
-public func isDebug() -> Bool {
-    
-    var flag = true
-    
-    #if DEBUG
-    print("debug")
-    flag = true
-    #else
-    print("release")
-    flag = false
-    #endif
-    return flag
-}
+//public func isDebug() -> Bool {
+//
+//    var flag = true
+//
+//    #if DEBUG
+//    print("debug")
+//    flag = true
+//    #else
+//    print("release")
+//    flag = false
+//    #endif
+//    return flag
+//}
+
+// 宽、高
+public var screenW = UIScreen.main.bounds.width
+public var screenH = UIScreen.main.bounds.height
