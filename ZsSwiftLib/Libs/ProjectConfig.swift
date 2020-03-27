@@ -14,9 +14,9 @@ class ProjectConfig: NSObject {
 
 import UIKit
 
-//public func kFont(_ size: CGFloat) -> UIFont {
-//    return UIFont.systemFont(ofSize: size, weight: UIFont.Weight.semibold)
-//}
+public func kFont(_ size: CGFloat) -> UIFont {
+    return UIFont.systemFont(ofSize: size, weight: UIFont.Weight.semibold)
+}
 
 
 /// 系统字体大小
