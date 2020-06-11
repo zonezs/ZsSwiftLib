@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "ZsSwiftLib"
-  spec.version      = "1.0.3"
+  spec.version      = "1.0.4"
   # 主要标题
   spec.summary      = "Only my Swift Lib's."
   # 详细描述（必须大于主要标题的长度）

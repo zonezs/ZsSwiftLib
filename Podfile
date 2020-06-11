@@ -6,5 +6,9 @@ target 'ZsSwiftLib' do
   use_frameworks!
 
   # Pods for ZsSwiftLib
+  
+  pod 'Alamofire', '~> 4.9.1'
+  pod 'Kingfisher', '~> 4.10.0'
+  pod 'SwiftyJSON', '~> 4.0'
 
 end
